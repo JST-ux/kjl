@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康晉綸的網站 - 關於康晉綸</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* 內聯樣式輔助美化：實際開發請移至 style.css */
+        :root {
+            --main-color: #007bff; /* 假設藍色為品牌主色 */
+            --accent-color: #28a745; /* 假設綠色為強調色 */
+            --text-color: #333;
+            --bg-light: #f8f9fa;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        h2, h3 {
+            color: var(--main-color);
+            border-bottom: 3px solid var(--main-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .slogan {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--bg-light);
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: var(--bg-light);
+            border-radius: 8px;
+        }
+        .profile-photo {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        .skill-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--main-color);
+        }
+        .progress-bar {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 15px;
+        }
+        .progress {
+            height: 100%;
+            background-color: var(--accent-color);
+            border-radius: 5px;
+            line-height: 15px;
+            color: white;
+            text-align: right;
+            padding-right: 5px;
+            font-size: 0.8em;
+            transition: width 0.5s ease-in-out;
+        }
+        .achievement-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .highlight-number {
+            color: var(--main-color);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>關於康晉綸</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about me.html" class="active">關於康晉綸</a></li>
+                <li><a href="files.html">作品與檔案</a></li>
+                <li><a href="calendar.html">重要行事曆</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="slogan">
+                ✨ **一位熱衷於學習新知識的大一新生，專注於將洞察轉化為具體影響力。** ✨
+            </div>
+            
+            <h2>我的個人簡介</h2>
+
+            <div class="profile-grid">
+                <div>
+                    <img src="placeholder-profile.jpg" alt="康晉綸的專業照片" class="profile-photo"> 
+                </div>
+                <div>
+                    <h3>康晉綸 (Jin-Lun Kang)</h3>
+                    <p><strong>現任：</strong> 國立虎尾科技大學 / 資訊工程系 / 大一新生 (擇一或多個填寫)</p>
+                    <p>我擁有 **5 年**的跨領域專案經驗，擅長整合技術與市場需求。從程式碼編寫到產品發布，我追求的目標始終是用簡潔高效的方法，解決複雜的商業問題。</p>
+                    <p style="color: var(--accent-color); font-style: italic;">💡 **小亮點：** 週末是一位熱衷於登山的戶外攝影愛好者，相信最好的解決方案往往來自於大自然給予的啟發。</p>
+                </div>
+            </div>
+
+            <h3>我的專業技能 (Skills Map)</h3>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <strong>硬實力 (Hard Skills) - 數據分析</strong>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;">90%</div></div>
+                </li>
+                <li class="skill-item">
+                    <strong>硬實力 (Hard Skills) - 專案管理 (PMP/Scrum)</strong>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
+                </li>
+                <li class="skill-item">
+                    <strong>軟實力 (Soft Skills) - 跨部門溝通</strong>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;">95%</div></div>
+                </li>
+            </ul>
+
+            <h3>我的關鍵成就 (Key Achievements)</h3>
+            <div class="achievement-card">
+                <h4>🏆 專案一：提升用戶參與度計劃</h4>
+                <ul>
+                    <li>**挑戰與行動：** 導入 A/B 測試機制，優化產品註冊流程。</li>
+                    <li>**成果證明：** 成功在 3 個月內，使**新用戶轉換率**提升 <span class="highlight-number">45%</span>。</li>
+                </ul>
+            </div>
+            <div class="achievement-card">
+                <h4>🚀 專案二：自動化工作流程建置</h4>
+                <ul>
+                    <li>**挑戰與行動：** 撰寫 Python 自動化腳本，整合多個業務系統數據。</li>
+                    <li>**成果證明：** 為團隊每年節省約 <span class="highlight-number">300 小時</span>的重複性工作時間。</li>
+                </ul>
+            </div>
+            
+            <h3>與我連結 (Let's Connect!)</h3>
+            <p>我正在尋求有機會能運用我的數據分析與專案管理經驗，共同打造下一代創新產品的合作夥伴。</p>
+            <p style="text-align: center; margin-top: 30px;">
+                📧 Email: <a href="mailto:kang.jinlun@example.com" style="color: var(--accent-color);">kang.jinlun@example.com</a><br>
+                🔗 LinkedIn: <a href="[你的 LinkedIn 網址]" target="_blank" style="color: var(--accent-color);">/in/kang-jinlun-profile</a>
+            </p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 康晉綸的網站. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
