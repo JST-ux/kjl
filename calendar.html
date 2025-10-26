@@ -6,6 +6,87 @@
     <title>康晉綸的網站 - 我喜歡的影片</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* 新增或修改樣式以符合您的需求 */
+        :root {
+            --primary-color: #007bff; /* 設置您想要的藍色 */
+            --secondary-color: #f8f9fa; /* 淺灰色背景 */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color); /* 淺灰色背景 */
+            color: var(--text-color);
+            min-height: 100vh; /* 確保內容足夠時 footer 保持在底部 */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--primary-color); /* 藍色背景 */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 0 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* 鼠標懸停效果 */
+        }
+
+        nav ul li a.active {
+            background-color: #ffc107; /* 活躍頁面使用黃色背景 */
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1; /* 讓 main 區塊佔據剩餘空間 */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block; /* 讓底線只與文字同寬 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         /* 影片容器樣式：確保影片響應式並居中 */
         .video-wrapper {
             max-width: 800px; /* 設定影片最大寬度 */
@@ -31,16 +112,10 @@
             height: 100%;
         }
 
-        /* 簡單的主體樣式（如果 style.css 不存在） */
-        body { font-family: 'Inter', sans-serif; line-height: 1.6; background-color: #f4f4f4; color: #333; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        header h1 { margin: 0; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; }
-        nav ul li a { color: white; text-decoration: none; padding: 0.5em 1em; display: block; }
-        nav ul li a:hover, nav ul li a.active { background-color: #555; border-radius: 4px; }
-        main { padding: 20px; max-width: 1200px; margin: auto; }
-        footer { text-align: center; padding: 1em 0; background-color: #ccc; position: fixed; bottom: 0; width: 100%; }
-        section { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        /* 隱藏頁尾 */
+        footer {
+            display: none; /* 將 footer 元素隱藏 */
+        }
     </style>
 </head>
 <body>
@@ -51,8 +126,7 @@
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about me.html">關於康晉綸</a></li>
                 <li><a href="files.html">其他同學的作品</a></li>
-                <li><a href="calendar.html" class="active">我喜歡的影片</a></li> <!-- 設定為當前頁面 active -->
-            </ul>
+                <li><a href="calendar.html" class="active">我喜歡的影片</a></li> <!-- 設定為當前頁面 active --></ul>
         </nav>
     </header>
 
@@ -62,8 +136,7 @@
             
             <div class="video-wrapper">
                 <div class="video-container">
-                    <!-- 使用您提供的 YouTube 嵌入程式碼 -->
-                    <iframe 
+                    <!-- 使用您提供的 YouTube 嵌入程式碼 --><iframe 
                         src="https://www.youtube.com/embed/zGhfXXoIbeQ?si=ixAdO2nGcgRZwjbS" 
                         title="YouTube video player" 
                         frameborder="0" 
@@ -75,12 +148,13 @@
             </div>
 
             <p style="text-align: center; margin-top: 30px; color: #555;">
+                這部影片的內容展示了... (您可以在這裡加入影片的描述或感想！)
             </p>
 
         </section>
     </main>
 
-    <footer>
+    <!-- 頁尾已透過 CSS 隱藏 --><footer>
         <p>&copy; 2025 康晉綸的網站</p>
     </footer>
 </body>
